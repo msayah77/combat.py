@@ -1,0 +1,33 @@
+import tbc
+
+def main():
+    
+    #set up an exciting battle we are nimble but frail (with some armor)
+    us = tbc.Character()
+    
+    #change parameters manually through properties
+    lion.name = "Lion"
+    lion.hitPerc = 60
+    lion.hitPoints = 10
+    us.maxDamage = 5
+    us.armor = 2
+    
+    # the enemy is a clumsy tank
+    # constructor provides an easier interface
+    tiger = tbc.Character("Tiger", 50, 20, 5, 0)
+    
+    lion.showStats()
+    tiger.showStats()
+    
+    tbc.basicFight(lion, tiger)
+    
+    #reset to defaults and start a user fight
+    #named attributes allow us to quickly set up a character
+    # lion = tbc.Character(name = "lion")
+    # tiger = tbc.Character(name = "tiger")
+    # lion.showStats()
+    #tiger.showStats()
+    # tbc.userfight(lion, tiger)
+    
+if __name__ == "__main__":
+    main()
